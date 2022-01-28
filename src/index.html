@@ -4,6 +4,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome to Firebase Hosting</title>
+    
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "firebase/app";
+    import { getAnalytics } from "firebase/analytics";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+    
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAuq80tbnyhNRHrt1PwKGNJQXjeJ3rGoJs",
+      authDomain: "originaluniversity-9579b.firebaseapp.com",
+      projectId: "originaluniversity-9579b",
+      storageBucket: "originaluniversity-9579b.appspot.com",
+      messagingSenderId: "748521611204",
+      appId: "1:748521611204:web:a74e40e0d7933aab654e91",
+      measurementId: "G-Y38S4GN53M"
+    };
+    
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/9.6.5/firebase-app.js"></script>

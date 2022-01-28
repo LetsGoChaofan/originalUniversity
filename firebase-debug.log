@@ -1,0 +1,256 @@
+[debug] [2022-01-28T11:39:51.090Z] ----------------------------------------------------------------------
+[debug] [2022-01-28T11:39:51.093Z] Command:       /home/ubuntu/.nvm/versions/node/v14.16.0/bin/node /home/ubuntu/.nvm/versions/node/v14.16.0/bin/firebase deploy
+[debug] [2022-01-28T11:39:51.093Z] CLI Version:   9.14.0
+[debug] [2022-01-28T11:39:51.093Z] Platform:      linux
+[debug] [2022-01-28T11:39:51.093Z] Node Version:  v14.16.0
+[debug] [2022-01-28T11:39:51.094Z] Time:          Fri Jan 28 2022 11:39:51 GMT+0000 (Coordinated Universal Time)
+[debug] [2022-01-28T11:39:51.094Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-28T11:39:51.101Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-28T11:39:51.102Z] > authorizing via signed-in user (oreyadeyou@gmail.com)
+[debug] [2022-01-28T11:39:51.102Z] [iam] checking project originaluniversity-f85c8 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-01-28T11:39:51.104Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-01-28T11:39:51.104Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-28T11:39:51.232Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Fri, 28 Jan 2022 11:39:51 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-28T11:39:51.241Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/originaluniversity-f85c8:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-01-28T11:39:51.921Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 28 Jan 2022 11:39:51 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=596","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-28T11:39:51.923Z] > refreshing access token with scopes: []
+[debug] [2022-01-28T11:39:51.923Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-28T11:39:52.089Z] <<< HTTP RESPONSE 200 {"date":"Fri, 28 Jan 2022 11:39:52 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-28T11:39:52.098Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/originaluniversity-f85c8 [none]
+[debug] [2022-01-28T11:39:52.399Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/originaluniversity-f85c8 200
+[debug] [2022-01-28T11:39:52.400Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/originaluniversity-f85c8 {"projectId":"originaluniversity-f85c8","projectNumber":"655329221027","displayName":"originalUniversity","name":"projects/originaluniversity-f85c8","resources":{"hostingSite":"originaluniversity-f85c8"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'originaluniversity-f85c8'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-01-28T11:39:52.405Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-01-28T11:39:52.405Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-28T11:39:52.559Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Fri, 28 Jan 2022 11:39:52 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-28T11:39:52.575Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/originaluniversity-f85c8/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-01-28T11:39:53.646Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Fri, 28 Jan 2022 11:39:53 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-28T11:39:53.646Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-01-28T11:39:53.738Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Fri, 28 Jan 2022 11:39:53 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/originaluniversity-f85c8/versions",
+        "path": "/v1beta1/sites/originaluniversity-f85c8/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/originaluniversity-f85c8/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2022-01-28T11:41:23.029Z] ----------------------------------------------------------------------
+[debug] [2022-01-28T11:41:23.032Z] Command:       /home/ubuntu/.nvm/versions/node/v14.16.0/bin/node /home/ubuntu/.nvm/versions/node/v14.16.0/bin/firebase deploy
+[debug] [2022-01-28T11:41:23.032Z] CLI Version:   9.14.0
+[debug] [2022-01-28T11:41:23.033Z] Platform:      linux
+[debug] [2022-01-28T11:41:23.033Z] Node Version:  v14.16.0
+[debug] [2022-01-28T11:41:23.033Z] Time:          Fri Jan 28 2022 11:41:23 GMT+0000 (Coordinated Universal Time)
+[debug] [2022-01-28T11:41:23.033Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-28T11:41:23.041Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-28T11:41:23.041Z] > authorizing via signed-in user (oreyadeyou@gmail.com)
+[debug] [2022-01-28T11:41:23.041Z] [iam] checking project originaluniversity-f85c8 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-01-28T11:41:23.043Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/originaluniversity-f85c8:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-01-28T11:41:23.682Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 28 Jan 2022 11:41:23 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=566","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-28T11:41:23.685Z] > refreshing access token with scopes: []
+[debug] [2022-01-28T11:41:23.685Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-28T11:41:23.784Z] <<< HTTP RESPONSE 200 {"date":"Fri, 28 Jan 2022 11:41:23 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-28T11:41:23.793Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/originaluniversity-f85c8 [none]
+[debug] [2022-01-28T11:41:24.100Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/originaluniversity-f85c8 200
+[debug] [2022-01-28T11:41:24.100Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/originaluniversity-f85c8 {"projectId":"originaluniversity-f85c8","projectNumber":"655329221027","displayName":"originalUniversity","name":"projects/originaluniversity-f85c8","resources":{"hostingSite":"originaluniversity-f85c8"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'originaluniversity-f85c8'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-01-28T11:41:24.106Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-01-28T11:41:24.106Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-28T11:41:24.262Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Fri, 28 Jan 2022 11:41:24 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-28T11:41:24.269Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/originaluniversity-f85c8/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-01-28T11:41:25.291Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Fri, 28 Jan 2022 11:41:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-28T11:41:25.292Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-01-28T11:41:25.390Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Fri, 28 Jan 2022 11:41:25 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/originaluniversity-f85c8/versions",
+        "path": "/v1beta1/sites/originaluniversity-f85c8/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/originaluniversity-f85c8/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2022-01-28T11:43:11.625Z] ----------------------------------------------------------------------
+[debug] [2022-01-28T11:43:11.628Z] Command:       /home/ubuntu/.nvm/versions/node/v14.16.0/bin/node /home/ubuntu/.nvm/versions/node/v14.16.0/bin/firebase deploy
+[debug] [2022-01-28T11:43:11.629Z] CLI Version:   9.14.0
+[debug] [2022-01-28T11:43:11.629Z] Platform:      linux
+[debug] [2022-01-28T11:43:11.629Z] Node Version:  v14.16.0
+[debug] [2022-01-28T11:43:11.629Z] Time:          Fri Jan 28 2022 11:43:11 GMT+0000 (Coordinated Universal Time)
+[debug] [2022-01-28T11:43:11.629Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-28T11:43:11.637Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-28T11:43:11.637Z] > authorizing via signed-in user (oreyadeyou@gmail.com)
+[debug] [2022-01-28T11:43:11.637Z] [iam] checking project originaluniversity-f85c8 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-01-28T11:43:11.640Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/originaluniversity-f85c8:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-01-28T11:43:11.834Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 28 Jan 2022 11:43:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=122","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-28T11:43:11.837Z] > refreshing access token with scopes: []
+[debug] [2022-01-28T11:43:11.837Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-28T11:43:11.935Z] <<< HTTP RESPONSE 200 {"date":"Fri, 28 Jan 2022 11:43:11 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-28T11:43:11.944Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/originaluniversity-f85c8 [none]
+[debug] [2022-01-28T11:43:12.230Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/originaluniversity-f85c8 200
+[debug] [2022-01-28T11:43:12.231Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/originaluniversity-f85c8 {"projectId":"originaluniversity-f85c8","projectNumber":"655329221027","displayName":"originalUniversity","name":"projects/originaluniversity-f85c8","resources":{"hostingSite":"originaluniversity-f85c8"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'originaluniversity-f85c8'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-01-28T11:43:12.236Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-01-28T11:43:12.236Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-28T11:43:12.394Z] <<< HTTP RESPONSE 200 {"date":"Fri, 28 Jan 2022 11:43:12 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-28T11:43:12.402Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/originaluniversity-f85c8/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-01-28T11:43:13.404Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Fri, 28 Jan 2022 11:43:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-28T11:43:13.405Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-01-28T11:43:13.504Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Fri, 28 Jan 2022 11:43:13 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/originaluniversity-f85c8/versions",
+        "path": "/v1beta1/sites/originaluniversity-f85c8/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/originaluniversity-f85c8/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
